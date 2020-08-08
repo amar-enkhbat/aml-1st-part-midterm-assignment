@@ -3,16 +3,7 @@ import matplotlib.pyplot as plt
 np.random.seed(0)
 
 class LRGD(object):
-    """
-        Linear Logistic Regression Classifier with batch steepest descent method
-        
-        Parameters
-        -----------------
-        eta: float 
-            Learning rate.
-        n_iter: int
-            Passes over the dataset.
-    """
+
     def __init__(self, eta=0.05, n_iter=100, lamda=0, random_state=0):
         self.eta = eta
         self.n_iter = n_iter
@@ -56,16 +47,7 @@ class LRGD(object):
         return np.mean(self.predict(x) == y)
 
 class MultiClassLRGD(object):
-    """
-        Linear Logistic Regression Classifier with batch steepest descent method
-        
-        Parameters
-        -----------------
-        eta: float 
-            Learning rate.
-        n_iter: int
-            Passes over the dataset.
-    """
+
     def __init__(self, eta=0.05, n_iter=100, lamda=0, random_state=0):
         self.eta = eta
         self.n_iter = n_iter
@@ -133,16 +115,7 @@ class MultiClassLRGD(object):
         return np.mean(self.predict(x) == y)
 
 class MultiClassNewtonGD(object):
-    """
-        Linear Logistic Regression Classifier with batch steepest descent method
-        
-        Parameters
-        -----------------
-        eta: float 
-            Learning rate.
-        n_iter: int
-            Passes over the dataset.
-    """
+
     def __init__(self, eta=0.05, n_iter=100, lamda=0, random_state=0):
         self.eta = eta
         self.n_iter = n_iter
@@ -218,16 +191,7 @@ class MultiClassNewtonGD(object):
         return np.mean(self.predict(x) == y)
 
 class LRNewton(object):
-    """
-        Linear Logistic Regression Classifier with batch steepest descent method
-        
-        Parameters
-        -----------------
-        eta: float 
-            Learning rate.
-        n_iter: int
-            Passes over the dataset.
-    """
+
     def __init__(self, eta=0.05, n_iter=100, lamda=0, random_state=0):
         self.eta = eta
         self.n_iter = n_iter
